@@ -31,17 +31,17 @@ moveFooterToHeader = false
 logoAlt = "ロゴの説明"
 
 [[menu.nav]]
-name = "Home"
+name = "ホーム"
 url = "/"
 weight = 1
 
 [[menu.nav]]
-name = "Contents"
+name = "コンテンツ"
 url = "/post/"
 weight = 2
 
 [[menu.nav]]
-name = "Tags"
+name = "タグ"
 url = "/tags/"
 weight = 3
 
