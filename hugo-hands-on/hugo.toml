@@ -1,5 +1,54 @@
-baseURL = '/'
-languageCode = 'ja-jp'
-defaultContentLanguage = 'ja'
-title = 'Hugo ハンズオン'
-theme = 'cupper-hugo-theme'
+baseURL = "https://t2y.github.io/"
+languageCode = "ja-jp"
+defaultContentLanguage = "ja"
+title = "Hugo ハンズオン"
+theme = "cupper-hugo-theme"
+contentDir = "content"
+
+# see also: https://github.com/zwbetz-gh/cupper-hugo-theme
+enableGitInfo = true
+
+[taxonomies]
+tag = "tags"
+
+[permalinks]
+post = "/:filename/"
+
+[imaging]
+quality = 99
+
+[params]
+description = "Hugo でのサイト構築のためのハンズオン資料"
+homeMetaContent = "Hugo でのサイト構築のためのハンズオン資料"
+footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme)."
+dateFormat = "2006-01-02"
+katex = true
+hideHeaderLinks = false
+search = true
+showThemeSwitcher = true
+defaultDarkTheme = true
+moveFooterToHeader = false
+logoAlt = "ロゴの説明"
+
+[[menu.nav]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.nav]]
+name = "Contents"
+url = "/post/"
+weight = 2
+
+[[menu.nav]]
+name = "Tags"
+url = "/tags/"
+weight = 3
+
+[[menu.nav]]
+name = "RSS"
+url = "/index.xml"
+weight = 4
+
+[markup]
+defaultMarkdownHandler = "goldmark"

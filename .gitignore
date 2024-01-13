@@ -1,4 +1,7 @@
+*.swp
+.DS_Store
 .hugo_build.lock
+hugo-hands-on/public
 
 # If you prefer the allow list template instead of the deny list, see community template:
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore

@@ -1,0 +1,20 @@
++++
+title = "Hugo ハンズオン"
+date = "2024-01-14T00:37:48+09:00"
++++
+
+このハンズオンでは次の内容を学びます。
+
+{{< ticks >}}
+
+* Hugo のインストール
+* Hugo のサイト構築
+* Hugo のテーマ設定
+  * [Cupper](https://themes.gohugo.io/themes/cupper-hugo-theme/)
+    * [リポジトリ](https://github.com/zwbetz-gh/cupper-hugo-theme)
+    * [デモ画面](https://cupper-hugo-theme.netlify.app/)
+* Hugo のコンテンツ作成
+  * コンテンツを書きながらブラウザで内容をレビューする
+* Hugo サイト／コンテンツの生成
+
+{{< /ticks >}}
