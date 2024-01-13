@@ -26,7 +26,7 @@ katex = true
 hideHeaderLinks = false
 search = true
 showThemeSwitcher = true
-defaultDarkTheme = true
+defaultDarkTheme = false
 moveFooterToHeader = false
 logoAlt = "ロゴの説明"
 
