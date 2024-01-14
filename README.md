@@ -13,13 +13,13 @@ $ cd hugo-hands-on
 
 ```bash
 $ cd hugo-hands-on/
-$ hugo new content post/install-hugo.md
+$ hugo new post/install-hugo.md
 Content "path/to/hugo-hands-on/content/post/install-hugo.md" created
 ```
 
 ホームメニューのコンテンツは特別に `_index.md` というファイル名で content 直下に作成する。
 
 ```bash
-$ hugo new content _index.md
+$ hugo new _index.md
 Content "path/to/hugo-hands-on/content/_index.md" created
 ```

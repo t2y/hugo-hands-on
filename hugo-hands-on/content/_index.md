@@ -7,6 +7,7 @@ date = "2024-01-14T00:37:48+09:00"
 
 {{< ticks >}}
 
+* [Hugo とは]({{< ref "post/what-is-hugo.md" >}})
 * Hugo のインストール
 * Hugo のサイト構築
 * Hugo のテーマ設定
