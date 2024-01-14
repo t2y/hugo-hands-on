@@ -4,9 +4,11 @@ Hugo ハンズオンチュートリアル
 
 ## リポジトリのクローン
 
+themes を git submodule で管理しているため、リポジトリをクローンしたときにそのリポジトリを取得する必要がある。
+
 ```bash
 $ git clone git@github.com:t2y/hugo-hands-on.git
-$ cd hugo-hands-on
+$ git submodule update --init
 ```
 
 ## 記事の作成方法
