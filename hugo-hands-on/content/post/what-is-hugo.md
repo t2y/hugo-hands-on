@@ -2,6 +2,7 @@
 title = "Hugo とは"
 date = 2024-01-14T10:49:01+09:00
 toc = true
+tags = ["hugo"]
 +++
 
 Hugo の概要について簡単に紹介します。
