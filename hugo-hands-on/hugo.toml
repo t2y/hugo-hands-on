@@ -29,6 +29,7 @@ showThemeSwitcher = true
 defaultDarkTheme = false
 moveFooterToHeader = false
 logoAlt = "ロゴの説明"
+customCss = ["css/myfavorite.css"]
 
 [[menu.nav]]
 name = "ホーム"
