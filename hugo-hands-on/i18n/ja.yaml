@@ -1,0 +1,22 @@
+- id: skip_to_content
+  translation: skip to content
+- id: nav_main_navigation
+  translation: メインナビゲーション
+- id: nav_button_menu
+  translation: メニュー
+- id: dark_theme
+  translation: "ダークテーマ:"
+- id: table_of_contents
+  translation: "目次"
+- id: publish_date
+  translation: "公開日付:"
+- id: last_updated
+  translation: "最終更新:"
+- id: tags
+  translation: "タグ:"
+- id: aria_label_tags
+  translation: タグ
+- id: search_placeholder
+  translation: タイトル検索...
+- id: search_aria_label
+  translation: タイトル検索
