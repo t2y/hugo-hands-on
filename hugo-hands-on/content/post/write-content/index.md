@@ -27,7 +27,7 @@ draft = false
 
 ドラフト機能とは下書き状態かどうかを管理し、下書きの記事を誤って公開しないようにするためのフラグです。このハンズオンでは重要ではないので無効にします。
 
-> draft=true のときも開発サーバーではドラフトの記事を確認できます。しかし、`hugo` コマンドで本番向けビルドしたときに出力されなくなります。その振る舞いも `hugo --buildDrafts` のようにオプションを指定することでドラフトの記事を出力するように変更できます。
+> draft=true のときは開発サーバーや `hugo` コマンドで本番向けビルドしたときに出力されなくなります。その振る舞いも `hugo --buildDrafts` のようにオプションを指定することでドラフトの記事を出力するように変更できます。
 > 
 > [Draft, future, and expired content](https://gohugo.io/getting-started/usage/#draft-future-and-expired-content)
 
