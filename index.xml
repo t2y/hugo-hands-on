@@ -2,7 +2,7 @@
 記事を作成する前に hugo のコマンドで記事を作成するときにメタデータの初期設定を管理するファイルがあります。
 archetypes/default.md デフォルトではドラフト機能が有効になっているため、このハンズオンではその設定を無効に設定します。draft = false に変更します。
 +++ title = &amp;#39;{{ replace .File.ContentBaseName &amp;#34;-&amp;#34; &amp;#34; &amp;#34; | title }}&amp;#39; date = {{ .Date }} draft = false +++ ドラフト機能とは下書き状態かどうかを管理し、下書きの記事を誤って公開しないようにするためのフラグです。このハンズオンでは重要ではないので無効にします。
-draft=true のときも開発サーバーではドラフトの記事を確認できます。しかし、hugo コマンドで本番向けビルドしたときに出力されなくなります。その振る舞いも hugo --buildDrafts のようにオプションを指定することでドラフトの記事を出力するように変更できます。
+draft=true のときは開発サーバーや hugo コマンドで本番向けビルドしたときに出力されなくなります。その振る舞いも hugo --buildDrafts のようにオプションを指定することでドラフトの記事を出力するように変更できます。
 Draft, future, and expired content
 記事のファイルを作成する 次のようにコマンドを実行してください。
 $ hugo new posts/first-blog/index.md Content &amp;#34;path/to/mysite/content/posts/first-blog/index.md&amp;#34; created 次の場所に index.md というファイルが作成されます。このファイルをテキストエディタで編集します。

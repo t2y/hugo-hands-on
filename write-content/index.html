@@ -2,7 +2,7 @@
 記事を作成する前に hugo のコマンドで記事を作成するときにメタデータの初期設定を管理するファイルがあります。
 archetypes/default.md デフォルトではドラフト機能が有効になっているため、このハンズオンではその設定を無効に設定します。draft = false に変更します。
 +++ title = '{{ replace .File.ContentBaseName &#34;-&#34; &#34; &#34; | title }}' date = {{ .Date }} draft = false +++ ドラフト機能とは下書き状態かどうかを管理し、下書きの記事を誤って公開しないようにするためのフラグです。このハンズオンでは重要ではないので無効にします。
-draft=true のときも開発サーバーではドラフトの記事を確認できます。しかし、hugo コマンドで本番向けビルドしたときに出力されなくなります。その振る舞いも hugo --buildDrafts のようにオプションを指定することでドラフトの記事を出力するように変更できます。
+draft=true のときは開発サーバーや hugo コマンドで本番向けビルドしたときに出力されなくなります。その振る舞いも hugo --buildDrafts のようにオプションを指定することでドラフトの記事を出力するように変更できます。
 Draft, future, and expired content
 記事のファイルを作成する 次のようにコマンドを実行してください。
 $ hugo new posts/first-blog/index.md Content &#34;path/to/mysite/content/posts/first-blog/index.md&#34; created 次の場所に index.md というファイルが作成されます。このファイルをテキストエディタで編集します。
@@ -15,7 +15,7 @@ $ ls content/posts/first-blog/ index.md hugo の開発サーバーを起動し�
 </span></span><span style=display:flex><span>date <span style=color:#f92672>=</span> <span style=color:#f92672>{{</span> .Date <span style=color:#f92672>}}</span>
 </span></span><span style=display:flex><span>draft <span style=color:#f92672>=</span> false
 </span></span><span style=display:flex><span>+++
-</span></span></code></pre></div><p>ドラフト機能とは下書き状態かどうかを管理し、下書きの記事を誤って公開しないようにするためのフラグです。このハンズオンでは重要ではないので無効にします。</p><blockquote><p>draft=true のときも開発サーバーではドラフトの記事を確認できます。しかし、<code>hugo</code> コマンドで本番向けビルドしたときに出力されなくなります。その振る舞いも <code>hugo --buildDrafts</code> のようにオプションを指定することでドラフトの記事を出力するように変更できます。</p><p><a href=https://gohugo.io/getting-started/usage/#draft-future-and-expired-content>Draft, future, and expired content</a></p></blockquote><h2 id=記事のファイルを作成する>記事のファイルを作成する</h2><p>次のようにコマンドを実行してください。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ hugo new posts/first-blog/index.md
+</span></span></code></pre></div><p>ドラフト機能とは下書き状態かどうかを管理し、下書きの記事を誤って公開しないようにするためのフラグです。このハンズオンでは重要ではないので無効にします。</p><blockquote><p>draft=true のときは開発サーバーや <code>hugo</code> コマンドで本番向けビルドしたときに出力されなくなります。その振る舞いも <code>hugo --buildDrafts</code> のようにオプションを指定することでドラフトの記事を出力するように変更できます。</p><p><a href=https://gohugo.io/getting-started/usage/#draft-future-and-expired-content>Draft, future, and expired content</a></p></blockquote><h2 id=記事のファイルを作成する>記事のファイルを作成する</h2><p>次のようにコマンドを実行してください。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ hugo new posts/first-blog/index.md
 </span></span><span style=display:flex><span>Content <span style=color:#e6db74>&#34;path/to/mysite/content/posts/first-blog/index.md&#34;</span> created
 </span></span></code></pre></div><p>次の場所に <code>index.md</code> というファイルが作成されます。このファイルをテキストエディタで編集します。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ ls content/posts/first-blog/
 </span></span><span style=display:flex><span>index.md
