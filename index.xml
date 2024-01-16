@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo ハンズオン</title><link>/hugo-hands-on/</link><description>Recent content on Hugo ハンズオン</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sun, 14 Jan 2024 00:37:48 +0900</lastBuildDate><atom:link href="/hugo-hands-on/index.xml" rel="self" type="application/rss+xml"/><item><title>コンテンツをビルドする</title><link>/hugo-hands-on/build-content/</link><pubDate>Sun, 14 Jan 2024 16:51:21 +0900</pubDate><guid>/hugo-hands-on/build-content/</guid><description>Hugo のインストール を完了したらこのハンズオン資料のリポジトリを使ってビルドしてみましょう。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo ハンズオン</title><link>/hugo-hands-on/</link><description>Recent content on Hugo ハンズオン</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sun, 14 Jan 2024 00:37:48 +0900</lastBuildDate><atom:link href="/hugo-hands-on/index.xml" rel="self" type="application/rss+xml"/><item><title>記事を書く</title><link>/hugo-hands-on/write-content/</link><pubDate>Wed, 17 Jan 2024 00:05:13 +0900</pubDate><guid>/hugo-hands-on/write-content/</guid><description>新規サイトの構築を完了 したら最初の記事を書いてみましょう。
+記事を作成する前に hugo のコマンドで記事を作成するときにメタデータの初期設定を管理するファイルがあります。
+archetypes/default.md デフォルトではドラフト機能が有効になっているため、このハンズオンではその設定を無効に設定します。draft = false に変更します。
++++ title = &amp;#39;{{ replace .File.ContentBaseName &amp;#34;-&amp;#34; &amp;#34; &amp;#34; | title }}&amp;#39; date = {{ .Date }} draft = false +++ ドラフト機能とは下書き状態かどうかを管理し、下書きの記事を誤って公開しないようにするためのフラグです。このハンズオンでは重要ではないので無効にします。
+draft=true のときも開発サーバーではドラフトの記事を確認できます。しかし、hugo コマンドで本番向けビルドしたときに出力されなくなります。その振る舞いも hugo --buildDrafts のようにオプションを指定することでドラフトの記事を出力するように変更できます。
+Draft, future, and expired content
+記事のファイルを作成する 次のようにコマンドを実行してください。
+$ hugo new posts/first-blog/index.md Content &amp;#34;path/to/mysite/content/posts/first-blog/index.md&amp;#34; created 次の場所に index.md というファイルが作成されます。このファイルをテキストエディタで編集します。
+$ ls content/posts/first-blog/ index.md hugo の開発サーバーを起動している状態であれば、ファイルの作成と同時にホーム画面に First Blog というタイトルのカードのようなものが表示されます。
+ホーム画面 そのリンクをクリックすると記事のページへ遷移します。
+記事のページ テキストエディタでここで作成した index.md ファイルを編集して保存してみましょう。</description></item><item><title>コンテンツをビルドする</title><link>/hugo-hands-on/build-content/</link><pubDate>Sun, 14 Jan 2024 16:51:21 +0900</pubDate><guid>/hugo-hands-on/build-content/</guid><description>Hugo のインストール を完了したらこのハンズオン資料のリポジトリを使ってビルドしてみましょう。
 リポジトリのクローン git コマンドを使って次のリポジトリをクローンします。
 $ git clone https://github.com/t2y/hugo-hands-on.git ./repo $ cd repo $ git submodule update --init リポジトリ配下の hugo-hands-on ディレクトリに移動します。
 $ ls LICENSE README.md hugo-hands-on $ cd hugo-hands-on $ ls archetypes content hugo.toml static themes 開発サーバーの起動 hugo の開発サーバーを起動します。hugo-hands-on ディレクトリで実行するのに注意してください。
