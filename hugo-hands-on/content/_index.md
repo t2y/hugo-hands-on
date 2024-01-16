@@ -26,7 +26,7 @@ date = "2024-01-14T00:37:48+09:00"
 * Hugo のテーマを少しカスタマイズする
 * Hugo の Shortcodes を使う
 * Github Pages を使う
-* GitHub Actions で Hugo の青果物をデプロイする
+* GitHub Actions で Hugo の成果物をデプロイする
 
 このハンズオン資料のテーマは Cupper を使っています。
 
