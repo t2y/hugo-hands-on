@@ -7,8 +7,7 @@ Draft, future, and expired content
 記事のファイルを作成する 次のようにコマンドを実行してください。
 $ hugo new posts/first-blog/index.md Content &amp;#34;path/to/mysite/content/posts/first-blog/index.md&amp;#34; created 次の場所に index.md というファイルが作成されます。このファイルをテキストエディタで編集します。
 $ ls content/posts/first-blog/ index.md hugo の開発サーバーを起動している状態であれば、ファイルの作成と同時にホーム画面に First Blog というタイトルのカードのようなものが表示されます。
-ホーム画面 そのリンクをクリックすると記事のページへ遷移します。
-記事のページ テキストエディタでここで作成した index.md ファイルを編集して保存してみましょう。</description></item><item><title>コンテンツをビルドする</title><link>/hugo-hands-on/build-content/</link><pubDate>Sun, 14 Jan 2024 16:51:21 +0900</pubDate><guid>/hugo-hands-on/build-content/</guid><description>Hugo のインストール を完了したらこのハンズオン資料のリポジトリを使ってビルドしてみましょう。
+ホーム画面 そのリンクをクリックすると記事のページへ遷移します。URL のパスもディレクトリの階層構造にある first-blog が含まれます。</description></item><item><title>コンテンツをビルドする</title><link>/hugo-hands-on/build-content/</link><pubDate>Sun, 14 Jan 2024 16:51:21 +0900</pubDate><guid>/hugo-hands-on/build-content/</guid><description>Hugo のインストール を完了したらこのハンズオン資料のリポジトリを使ってビルドしてみましょう。
 リポジトリのクローン git コマンドを使って次のリポジトリをクローンします。
 $ git clone https://github.com/t2y/hugo-hands-on.git ./repo $ cd repo $ git submodule update --init リポジトリ配下の hugo-hands-on ディレクトリに移動します。
 $ ls LICENSE README.md hugo-hands-on $ cd hugo-hands-on $ ls archetypes content hugo.toml static themes 開発サーバーの起動 hugo の開発サーバーを起動します。hugo-hands-on ディレクトリで実行するのに注意してください。

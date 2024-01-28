@@ -7,5 +7,4 @@ Draft, future, and expired content
 記事のファイルを作成する 次のようにコマンドを実行してください。
 $ hugo new posts/first-blog/index.md Content &amp;#34;path/to/mysite/content/posts/first-blog/index.md&amp;#34; created 次の場所に index.md というファイルが作成されます。このファイルをテキストエディタで編集します。
 $ ls content/posts/first-blog/ index.md hugo の開発サーバーを起動している状態であれば、ファイルの作成と同時にホーム画面に First Blog というタイトルのカードのようなものが表示されます。
-ホーム画面 そのリンクをクリックすると記事のページへ遷移します。
-記事のページ テキストエディタでここで作成した index.md ファイルを編集して保存してみましょう。</description></item></channel></rss>
+ホーム画面 そのリンクをクリックすると記事のページへ遷移します。URL のパスもディレクトリの階層構造にある first-blog が含まれます。</description></item></channel></rss>
