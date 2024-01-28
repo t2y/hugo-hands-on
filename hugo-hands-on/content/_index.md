@@ -34,8 +34,8 @@ date = "2024-01-14T00:37:48+09:00"
 
 実はこのハンズオン資料そのものがシンプルにみえて、少しテーマをカスタマイズしたり、テーマが提供する拡張機能を使っていたりします。
 
-* Hugo のテーマを少しカスタマイズする
-* Hugo の Shortcodes を使う
+* [Hugo のテーマをカスタマイズする]({{< ref "post/customize-theme" >}})
+* [Hugo の Shortcodes を使う]({{< ref "post/use-shortcodes" >}})
 
 さらにリポジトリに修正内容を push すると自動的に [GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages) にデプロイしたりしています。GitHub Pages とは GitHub 社が提供する静的なサイトホスティングサービスです。GitHub のアカウントをもっていれば少し設定すれば無料で使えます。GitHub Pages というサービスを使って、このハンズオン資料はインターネット上に公開されています。
 

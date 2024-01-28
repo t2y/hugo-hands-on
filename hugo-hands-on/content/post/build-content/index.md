@@ -59,7 +59,7 @@ Web Server is available at http://localhost:45329/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
-1313番ポートが未使用のときは [http://localhost:1313](http://localhost:1313) で起動します。他に hugo の開発サーバーを起動しているなど仕様済みのときはランダムにポート番号が設定されます。ブラウザで起動した開発サーバーのポート番号にアクセスするとこのハンズオン資料を確認できます。
+1313番ポートが空いているときはデフォルトで [http://localhost:1313](http://localhost:1313) で起動します。他に hugo の開発サーバーを起動している、または他アプリケーションがたまたまそのポート番号を使っているなど、使用済みのときはランダムにポート番号が設定されます。そのときは開発サーバーを再起動するごとにポート番号が変わるのでご注意ください。ブラウザで起動した開発サーバーのポート番号にアクセスするとこのハンズオン資料を確認できます。
 
 {{< figureCupper img="hugo-hands-on-build1.png" caption="ホーム画面" command="Resize" options="800x" >}}
 
