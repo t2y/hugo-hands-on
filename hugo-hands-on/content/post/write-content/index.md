@@ -51,17 +51,17 @@ hugo の開発サーバーを起動している状態であれば、ファイル
 
 {{< figureCupper img="hugo-hands-on-write-content1.png" caption="ホーム画面" command="Resize" options="800x" >}}
 
-そのリンクをクリックすると記事のページへ遷移します。
+そのリンクをクリックすると記事のページへ遷移します。URL のパスもディレクトリの階層構造にある `first-blog` が含まれます。
 
 {{< figureCupper img="hugo-hands-on-write-content2.png" caption="記事のページ" command="Resize" options="800x" >}}
 
-テキストエディタでここで作成した `index.md` ファイルを編集して保存してみましょう。
+作成した記事をブラウザで開いたら、テキストエディタからこの `index.md` ファイルを編集して、その都度、保存してみましょう。
 
 ```
 content/posts/first-blog/index.md
 ```
 
-markdown 記法を使ってテキストがブラウザでどのように表示されるかを確認してみてください。また見出しは目次に反映されます。
+例えば markdown 記法を使って記述したテキストがブラウザでどのように表示されるかを確認してみてください。また見出しのテキストは目次としても反映されます。
 
 * 見出しを作る
 * 強調の太字を書く
@@ -72,10 +72,37 @@ markdown 記法を使ってテキストがブラウザでどのように表示�
 
 {{< figureCupper img="hugo-hands-on-write-content3.png" caption="記事の編集" command="Resize" options="800x" >}}
 
-書いては保存して、ブラウザで内容を確認して、また書いては保存して内容を確認する。この繰り返しで記事を書きます。
+書いては保存して、ブラウザで内容を確認して、また書いては保存して内容を確認する。Hugo に限りませんが、静的サイトジェネレーターを使うときはこういった繰り返しで記事を書きます。
 
 試行錯誤しながらやってみてください。
 
 ## 記事の編集を終えたら
 
 実際の Web サーバーにデプロイするときは [本番環境向けのビルド]({{< ref "post/build-content#本番環境向けのビルド" >}}) を参照してください。
+
+## (テキストだけの) 記事のファイルを作成する
+
+基本的には前節で紹介したディレクトリを作成してその配下に `index.md` を作るやり方を覚えておけばよいです。このやり方だと、例えば記事の中に画像ファイルを表示したいときに `index.md` ファイルと同じディレクトリ内に画像ファイルを配置することで相対パスで画像ファイルを指定できて便利です。要は記事に使うメディアファイルも一緒にかためて整理できるのでわかりやすいというメリットがあります。
+
+一方で別のやり方も紹介しておきます。画像ファイルなどはなく、ただテキストのみを管理したいという場合、わざわざディレクトリを作るのは面倒に感じるかもしれません。そういうときは次のようにコマンドを実行してください。
+
+```bash
+$ hugo new posts/ya-blog.md
+Content "path/to/mysite/content/posts/ya-blog.md" created
+```
+
+content/posts 配下のディレクトリに直接 `ya-blog.md` というテキストファイルを配置して前節と同様の URL の命名規則 (`http://localhost:${ポート番号}/posts/ya-blog/`) でアクセスできることを確認してください。
+
+{{< figureCupper img="hugo-hands-on-write-content5.png" caption="別の記事のページ" command="Resize" options="800x" >}}
+
+content/posts 配下は次のようなディレクトリ構造は次のようになります。
+
+```bash
+$ tree content/posts/
+content/posts/
+├── first-blog
+│   └── index.md
+└── ya-blog.md
+
+1 directory, 2 files
+```
