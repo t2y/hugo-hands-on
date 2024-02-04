@@ -40,4 +40,4 @@ date = "2024-01-14T00:37:48+09:00"
 さらにリポジトリに修正内容を push すると自動的に [GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages) にデプロイしたりしています。GitHub Pages とは GitHub 社が提供する静的なサイトホスティングサービスです。GitHub のアカウントをもっていれば少し設定すれば無料で使えます。GitHub Pages というサービスを使って、このハンズオン資料はインターネット上に公開されています。
 
 * Github Pages を使う
-* GitHub Actions で Hugo の成果物をデプロイする
+* [GitHub Actions で Hugo の成果物をデプロイする]({{< ref "post/deploy-by-github-actions" >}})
