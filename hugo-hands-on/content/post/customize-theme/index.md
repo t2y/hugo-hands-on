@@ -16,6 +16,8 @@ $ git submodule add https://github.com/zwbetz-gh/cupper-hugo-theme.git themes/cu
 $ git submodule update
 ```
 
+必ずしも git コマンドを使わないといけないわけではありません。テーマによっては zip ファイルなどを提供している場合もあります。しかし、テーマのリポジトリが更新されたときにその変更を反映することを考慮すると git submodule でリポジトリをクローンする方法をお奨めします。
+
 ディレクトリ階層は次のようになります。
 
 ```bash
@@ -51,7 +53,7 @@ themes/
 customCss = ["css/custom_01.css", "css/custom_02.css"]
 ```
 
-`hugo.toml` に次のような設定を追加し、この `myfavorite.css` という設定は `static/css/myfavorite.css` に配置します。[Directories](https://gohugo.io/getting-started/directory-structure/#directories) では `static` ディレクトリはサイト構築時に公開ディレクトリにコピーされるファイルを含む場所であることが説明されています。Hugo では外部からアクセス可能な任意のファイルは置く場所になります。
+`hugo.toml` に次のような設定を追加し、この `myfavorite.css` という設定は `static/css/myfavorite.css` に配置します。[Directories](https://gohugo.io/getting-started/directory-structure/#directories) のドキュメントでは `static` ディレクトリはサイト構築時に公開ディレクトリにコピーされるファイルを含む場所であることが説明されています。Hugo では外部からアクセス可能な任意のファイルを置く場所になります。
 
 ```toml
 customCss = ["css/myfavorite.css"]
@@ -59,7 +61,7 @@ customCss = ["css/myfavorite.css"]
 
 ## テーマの CSS のデバッグ
 
-ここで Cupper のデフォルトの行間サイズをカスタマイズしたいとします。行間のサイズを扱う CSS のプロパティは [line-height](https://developer.mozilla.org/ja/docs/Web/CSS/line-height) です。Google Chrome デベロッパーツールを使ったり、`themes/` 配下のコードを検索したりしてどこで定義されているのかを調べていきます。どうやって CSS の定義を調べるかというのを文章で説明するのは難しいのですが、試行錯誤しながらやっていくしかない気がします。
+ここで Cupper のデフォルトの行間サイズをカスタマイズしたいとします。行間のサイズを扱う CSS のプロパティは [line-height](https://developer.mozilla.org/ja/docs/Web/CSS/line-height) です。Google Chrome デベロッパーツールを使ったり、`themes/` 配下のコードを検索したりしてどこで定義されているのかを調べていきます。どうやって CSS の定義を調べるのかを文章で説明するのは難しいのですが、それぞれのやり方で試行錯誤しながらやっていくしかありません。
 
 ```bash
 $ grep -ri line-height themes/*
@@ -102,4 +104,4 @@ html {
 }
 ```
 
-これだけで line-height の値をカスタマイズできます。数字を変更してみて、ブラウザ表示される行間が実際に更新されるかを試してみましょう。うまく更新されないときは Hugo の開発サーバーを再起動してください。
+これだけで line-height の値をカスタマイズできます。数字を変更してみて、ブラウザ表示される行間が実際に更新されるかを試してみましょう。もし値を変更しても、意図したように更新されないときは Hugo の開発サーバーを再起動してください。
