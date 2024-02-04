@@ -2,7 +2,7 @@
 title = "GitHub Actions で Hugo の成果物をデプロイする"
 date = 2024-02-05T00:48:47+09:00
 toc = true
-tags = ["hugo", "github", "deploy"]
+tags = ["hugo", "github", "deploy", "build"]
 +++
 
 このハンズオン資料は [GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages) 上で公開されています。そして、リポジトリに変更を push すると、Hugo のコンテンツをビルドして自動的に GitHub Pages にデプロイします。
