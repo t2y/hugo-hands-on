@@ -27,11 +27,27 @@ Markdown 記法に足りない機能を補うために Hugo は [Shortcodes](htt
 
 一般的な用途の表現には Hugo が組み込みのショートコードとしてその機能を提供しています。[Use Hugo’s built-in shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes) でどのようなものがあるのかを確認してください。
 
+### コンテンツへのパスを取得する
+
+コンテンツへのパスを取得するには `ref` または `relref` というショートコードを使います。
+
+> [MarkDown 記法のテキストへのリンク]({{</* ref "post/sample-text" */>}})
+
+[MarkDown 記法のテキストへのリンク]({{< ref "post/sample-text" >}})
+
+> [MarkDown 記法のテキストへのリンク]({{</* relref "sample-text" */>}})
+
+[MarkDown 記法のテキストへのリンク]({{< relref "sample-text" >}})
+
+### 画像を表示する
+
 画像を表示するには `figure` というショートコードを使います。
 
 > {{</* figure src="https://gohugo.io/images/hugo-logo-wide.svg" caption="フーゴロゴ" width=240 */>}}
 
 {{< figure src="https://gohugo.io/images/hugo-logo-wide.svg" caption="フーゴロゴ" width=240 >}}
+
+### X (旧Twitter) のポストを表示する
 
 X (旧Twitter) のポストを表示するには `tweet` というショートコードを使います。
 
