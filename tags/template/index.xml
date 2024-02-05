@@ -5,5 +5,5 @@ MarkDown 記法と表現の限界 Hugo では MarkDown 記法のテキスト を
 {{&amp;lt; youtube id=&amp;ldquo;Cc67K6O47XA&amp;rdquo; title=&amp;ldquo;lofi beats Tokyo LosT Tracks -サクラチル- long mix&amp;rdquo; &amp;gt;}}
 このショートコードは Hugo 自身が組み込みのショートコードとして提供しています。ソースコードは hugo/tpl/tplimpl/embedded/templates/shortcodes/youtube.html にあります。ブラウザに表示されたものとショートコードの実装を見比べることでなんとなく雰囲気はつかめると思います。
 Hugo の組み込みショートコード 一般的な用途の表現には Hugo が組み込みのショートコードとしてその機能を提供しています。Use Hugo’s built-in shortcodes でどのようなものがあるのかを確認してください。
-画像を表示するには figure というショートコードを使います。
-{{&amp;lt; figure src=&amp;ldquo;https://gohugo.io/images/hugo-logo-wide.svg&amp;quot; caption=&amp;ldquo;フーゴロゴ&amp;rdquo; width=240 &amp;gt;}}</description></item></channel></rss>
+コンテンツへのパスを取得する コンテンツへのパスを取得するには ref または relref というショートコードを使います。
+[MarkDown 記法のテキストへのリンク]({{&amp;lt; ref &amp;ldquo;post/sample-text&amp;rdquo; &amp;gt;}})</description></item></channel></rss>

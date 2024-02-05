@@ -11,8 +11,8 @@ MarkDown 記法と表現の限界 Hugo では MarkDown 記法のテキスト を
 {{&amp;lt; youtube id=&amp;ldquo;Cc67K6O47XA&amp;rdquo; title=&amp;ldquo;lofi beats Tokyo LosT Tracks -サクラチル- long mix&amp;rdquo; &amp;gt;}}
 このショートコードは Hugo 自身が組み込みのショートコードとして提供しています。ソースコードは hugo/tpl/tplimpl/embedded/templates/shortcodes/youtube.html にあります。ブラウザに表示されたものとショートコードの実装を見比べることでなんとなく雰囲気はつかめると思います。
 Hugo の組み込みショートコード 一般的な用途の表現には Hugo が組み込みのショートコードとしてその機能を提供しています。Use Hugo’s built-in shortcodes でどのようなものがあるのかを確認してください。
-画像を表示するには figure というショートコードを使います。
-{{&amp;lt; figure src=&amp;ldquo;https://gohugo.io/images/hugo-logo-wide.svg&amp;quot; caption=&amp;ldquo;フーゴロゴ&amp;rdquo; width=240 &amp;gt;}}</description></item><item><title>Hugo のテーマをカスタマイズする</title><link>/hugo-hands-on/customize-theme/</link><pubDate>Sun, 28 Jan 2024 15:05:58 +0900</pubDate><guid>/hugo-hands-on/customize-theme/</guid><description>このハンズオン資料は Cupper というテーマを使っています。
+コンテンツへのパスを取得する コンテンツへのパスを取得するには ref または relref というショートコードを使います。
+[MarkDown 記法のテキストへのリンク]({{&amp;lt; ref &amp;ldquo;post/sample-text&amp;rdquo; &amp;gt;}})</description></item><item><title>Hugo のテーマをカスタマイズする</title><link>/hugo-hands-on/customize-theme/</link><pubDate>Sun, 28 Jan 2024 15:05:58 +0900</pubDate><guid>/hugo-hands-on/customize-theme/</guid><description>このハンズオン資料は Cupper というテーマを使っています。
 テーマのディレクトリ構成 このテーマのインストールは次のように cupper-hugo-theme というリポジトリをそのまま themes/ 配下に配置しています。
 $ git submodule add https://github.com/zwbetz-gh/cupper-hugo-theme.git themes/cupper-hugo-theme $ git submodule update 必ずしも git コマンドを使わないといけないわけではありません。テーマによっては zip ファイルなどを提供している場合もあります。しかし、テーマのリポジトリが更新されたときにその変更を反映することを考慮すると git submodule でリポジトリをクローンする方法をお奨めします。
 ディレクトリ階層は次のようになります。
