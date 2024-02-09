@@ -37,7 +37,7 @@ date = "2024-01-14T00:37:48+09:00"
 * [Hugo のテーマをカスタマイズする]({{< ref "post/customize-theme" >}})
 * [Hugo の Shortcodes を使う]({{< ref "post/use-shortcodes" >}})
 
-さらにリポジトリに修正内容を push すると自動的に [GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages) にデプロイしたりしています。GitHub Pages とは GitHub 社が提供する静的なサイトホスティングサービスです。GitHub のアカウントをもっていれば少し設定すれば無料で使えます。GitHub Pages というサービスを使って、このハンズオン資料はインターネット上に公開されています。
+さらにリポジトリに修正内容を push すると自動的に [GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages) にデプロイしたりしています。
 
-* Github Pages を使う
+* [Github Pages を使う]({{< ref "post/use-github-pages" >}})
 * [GitHub Actions で Hugo の成果物をデプロイする]({{< ref "post/deploy-by-github-actions" >}})
