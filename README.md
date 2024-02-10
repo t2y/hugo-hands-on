@@ -16,7 +16,7 @@ $ git submodule update --init
 新規ディレクトリの配下に `index.md` を作る。
 
 ```bash
-> hugo new post/deploy-by-github-actions/index.md
+$ hugo new post/deploy-by-github-actions/index.md
 Content "path/to/hugo-hands-on/content/post/deploy-by-github-actions/index.md" created
 ```
 
