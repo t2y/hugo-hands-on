@@ -74,7 +74,7 @@ theme = "PaperMod"
 
 > **Hugo の設定ファイルのフォーマット**
 > 
-> Hugo ではデフォルトで [TOML](https://ja.wikipedia.org/wiki/TOML) というフォーマットを使います。[Configure Hugo](https://gohugo.io/getting-started/configuration/) を参照するとわかりますが、実は Hugo は toml, yaml, json の3つのフォーマットに対応しています。好みのマークアップ記法を用いて設定できます。これは一見、ユーザーの好みにあわせて自由度が高いようにみえますが、私はあまりよい仕様とは思えません。というのは、インターネットで Hugo の設定を調べたときに toml だったり yaml だったりで、同じ設定が異なるフォーマットでみつからからです。これは初心者を大いに混乱させます。例えば [PaperMod のデモサイトの設定サンプル](https://github.com/adityatelange/hugo-PaperMod/blob/exampleSite/config.yml) は yaml フォーマットで記述されています。[オンラインのフォーマット変換サービス](https://transform.tools/yaml-to-toml) などを使ってフォーマット変換して設定を参考にするとよいでしょう。
+> Hugo ではデフォルトで [TOML](https://ja.wikipedia.org/wiki/TOML) というフォーマットを使います。[Configure Hugo](https://gohugo.io/getting-started/configuration/) を参照するとわかりますが、実は Hugo は toml, yaml, json の3つのフォーマットに対応しています。好みのマークアップ記法を用いて設定できます。これは一見、ユーザーの好みにあわせて自由度が高いようにみえますが、私はあまりよい仕様とは思えません。というのは、インターネットで Hugo の設定を調べたときに toml だったり yaml だったりで、同じ設定が異なるフォーマットでみつかるからです。これは初心者を大いに混乱させます。例えば [PaperMod のデモサイトの設定サンプル](https://github.com/adityatelange/hugo-PaperMod/blob/exampleSite/config.yml) は yaml フォーマットで記述されています。[オンラインのフォーマット変換サービス](https://transform.tools/yaml-to-toml) などを使ってフォーマット変換して設定を参考にするとよいでしょう。
 > 
 > さらに Hugo の設定ファイルの名前はもともと `config.toml` だったのが、最近は `hugo.toml` に名前が変わったそうです。過去との互換性のために `config.toml` でも動作します。そして、これもオンラインで検索していると `config.toml` に行うと説明している設定もたくさん出てきます。
 
